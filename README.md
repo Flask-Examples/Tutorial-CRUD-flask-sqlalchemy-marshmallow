@@ -19,7 +19,7 @@ Make CRUD with Flask and your tools
 ## Installation
 
 ```sh
-pipenv install -d
+pipenv install
 
 ```
 ---
@@ -61,10 +61,13 @@ post('http://127.0.0.1:5000/cadastrar', json=dados).json()
 
 get('http://127.0.0.1:5000/mostrar').json()
 ```
+
 modificar
 ```sh
 
 novo_dado = {'escritor': 'flask', 'livro': 'python3'}
+
+get('http://127.0.0.1:5000/modificar/3', json=novo_dado).json()
 
 ```
 
